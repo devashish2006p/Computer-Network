@@ -73,7 +73,13 @@ Physical Connectivity Devices wo hardware components hote hain jo network device
         7. Poore process ka dauran power supply circuit sabhi internal components ko required aur stable DC power provide karta rehta hai.
         8. Clock/Oscillator Circuit sabhi digital circuits ko common timing pulses provide karta hai taki synchronized operation maintain rahe.
       - **Limitations**
-      
+        1. Data ko smjhe bina sabhi ports par broadcast kar deta ha.
+        2. Sabhi devices same collision domain share karta hai, isiliye collisions zyada hota hai.
+        3. Sabhi connected devices ek hi bandwidth share karte hai, jisshe performance kam ho jata hai.
+      - **Advantages**
+        1. Structure aur working bahut simple hota hai, isiliye samjhana aur use karna aasan hota hai.
+        2. Switch ka comparision ma sasta networking device hota hai.
+        3. Configuration ki jarurat nahi parti. 
     2. Patch Panel
     3. Passive Splitter/Coupler
 ## 3. Transmission Medium Devices 
