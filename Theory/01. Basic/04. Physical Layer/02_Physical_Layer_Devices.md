@@ -80,10 +80,99 @@ Physical Connectivity Devices wo hardware components hote hain jo network device
         1. Structure aur working bahut simple hota hai, isiliye samjhana aur use karna aasan hota hai.
         2. Switch ka comparision ma sasta networking device hota hai.
         3. Configuration ki jarurat nahi parti. 
-    2. Patch Panel
-    3. Passive Splitter/Coupler
+    2. Patch Panel - Patch Panel ek passive Physical Layer (Layer 1) ka cable management aur connectivity device hai jo permanent network cables ko terminate aur organize karta hai, aur unhe short patch cords ke through switches ya anya network devices se aasani se connect, disconnect ya reconfigure karne ki suvidha deta hai.
+      - **Internal Components**
+        1. RJ45 Ports (Front Interface) – Jahan patch cords connect hote hain.
+        2. IDC / Punch-Down Terminals (Back Interface) – Jahan permanent LAN cables terminate ki jati hain.
+        3. Internal Conductive Contacts (Copper Traces/Contacts) – Front RJ45 ports ko back IDC terminals se electrically connect karte hain.
+        4. Patch Panel Frame / Chassis – Metal ya plastic body jo sabhi ports aur components ko hold aur protect karti hai.
+        5. Port Numbering & Label Strip – Har port ko identify aur organize karne ke liye numbering/labeling provide karti hai.
+        6. Cable Management Bar / Strain Relief (Model dependent) – Permanent cables ko support deta hai aur cable par tension (strain) kam karta hai.
+      - **Internal Mechanism**
+          1. Cable Termination Stage - Permanent network cable ko Patch Panel ke back side ke IDC (Punch-Down) terminals par terminate kiya jata hai.
+          2. Signal Reception Stage - Jab kisi device se signal permanent cable ke through aata hai, to wo IDC terminal tak pahunchta hai.
+          3. Internal Signal Path Stage - IDC terminal se signal Patch Panel ke internal copper contacts/traces ke through corresponding front RJ45 port tak pass hota hai.
+          4. Patch Connection Stage - Front RJ45 port me lagi patch cord us signal ko receive karti hai aur use Switch, Hub ya kisi doosre network device tak le jati hai.
+          5. Bidirectional Communication Stage - Yehi process reverse direction me bhi hota hai; signal dono directions me pass ho sakta hai bina kisi processing ke.
+          6. Passive Operation Stage - Pure process ke dauran Patch Panel signal ko na amplify karta hai, na regenerate karta hai, na filter karta hai aur na hi interpret karta hai; ye sirf ek organized physical path provide karta hai.
+        - **Advantages**
+          1. Organized Cabling – Network cables ko systematic aur neatly organize karta hai.
+          2. Easy Maintenance – Cable faults ko identify aur replace karna aasaan ho jata hai.
+          3. Easy Reconfiguration – Patch cords badalkar connections ko bina permanent cabling badle aasani se change kiya ja sakta hai.
+          4. Protects Permanent Cables – Permanent building cables ko baar-baar unplug karne ki zarurat nahi padti, isliye unki life badh jati hai.
+          5. Simplifies Troubleshooting – Network connections ko trace aur troubleshoot karna easy ho jata hai.
+          6. Scalable – Naye devices aur network expansions ko efficiently manage kiya ja sakta hai.
+        - **Disadvantages**
+          1. Signal Processing nahi karta – Signal ko amplify, regenerate ya filter nahi karta.
+          2. Additional Hardware Required – Kaam karne ke liye patch cords aur active devices (jaise Switch) ki zarurat hoti hai.
+          3. Installation Skill Required – IDC terminals par sahi cable termination ke liye proper tools aur technique chahiye.
+          4. Extra Cost – Network infrastructure me additional hardware cost add karta hai.
+          5. Space Required – Rack ya wall mounting ke liye extra physical space ki zarurat hoti hai.
+          6. Wrong Termination Issues – Agar cables galat terminate ho jayein to connectivity problems aa sakti hain.
+    3. Passive Splitter - Passive Splitter ek passive Physical Layer (Layer 1) ka device hai jo bina kisi power ya signal processing ke ek incoming signal ko do ya adhik output paths me distribute (split) karta hai.
+        - **Internal Components**
+          1. Input Port – Jahan se original signal splitter me enter karta hai.
+          2. Signal Splitting Network – Internal passive conductive path/optical splitter jo signal ko multiple outputs me divide karta hai.
+          3. Output Ports – Split hue signal ko alag-alag cables ya devices tak bhejte hain.
+          4. Protective Housing (Enclosure) – Internal components ko hold aur protect karta hai.
+          5. Connectors (Model dependent) – RJ45, BNC, SC, LC ya anya connector types, medium ke hisaab se.
+        - **Internal Mechanism**
+          1. Signal Reception Stage – Incoming electrical, optical ya RF signal Input Port ke through Passive Splitter me enter karta hai.
+          2. Signal Distribution Stage – Internal passive conductive path ya optical splitting element signal ko bina process kiye multiple branches me divide karta hai.
+          3. Signal Forwarding Stage – Split hua signal corresponding Output Ports tak pahunchaya jata hai.
+          4. Signal Transmission Stage – Output Ports split signal ko connected cables ya devices tak forward kar dete hain.
+          5. Passive Operation Stage – Pure process ke dauran Passive Splitter signal ko na amplify karta hai, na regenerate karta hai, na filter karta hai aur na hi interpret karta hai; ye sirf signal ko physically divide karke multiple paths me distribute karta hai.
+        - **Advantage**
+          1. Simple Design – Structure bahut simple hota hai aur configuration ki zarurat nahi hoti.
+          2. No External Power Required – Bina electricity ke kaam karta hai.
+          3. Low Cost – Active signal distribution devices ke comparison me sasta hota hai.
+          4. Easy Installation – Install aur use karna bahut aasaan hota hai.
+          5. Signal Distribution – Ek incoming signal ko multiple output paths me distribute kar sakta hai.
+        - **Disadvantage**
+          1. Signal Loss – Signal split hone ki wajah se har output par signal strength kam ho jati hai.
+          2. No Signal Regeneration – Weak signal ko restore ya regenerate nahi karta.
+          3. No Signal Amplification – Signal ki power increase nahi karta.
+          4. No Intelligent Processing – Data ya signal ko analyze, filter ya route nahi karta.
+          5. Limited Distance Support – Signal loss ki wajah se long-distance communication ke liye suitable nahi hota.
+          6. Performance Depends on Input Signal – Agar input signal weak ho, to output signals aur bhi weak ho jate hain.
+    4. Passive Coupler - Passive Coupler ek passive Physical Layer (Layer 1) ka device hai jo bina kisi power ya signal processing ke do physical cables ya network links ko aapas me connect (couple) karta hai, taki signal ek cable se doosri cable tak pass ho sake.
+        - **Internal Components**
+          1. Input/Output Connectors (Ports) – Do physical cables ya links ko connect karne ke liye connectors provide karte hain.
+          2. Internal Conductive/Optical Coupling Path – Signal ko ek connector se doosre connector tak bina process kiye pass karne wala internal path.
+          3. Alignment Mechanism (Medium dependent) – Copper ya fiber conductors ko accurately align karta hai taki signal efficiently pass ho sake.
+          4. Protective Housing (Enclosure) – Internal parts ko hold aur physical damage se protect karta hai.
+          5. Locking/Fixing Mechanism (Model dependent) – Connected cables ko securely hold karta hai aur accidental disconnection se bachata hai.
+        - **Internal Mechanism**
+          1. Signal Reception Stage – Signal pehli cable se Coupler ke first connector ke through enter karta hai.
+          2. Physical Coupling Stage – Coupler ka internal conductive/optical path dono connectors ko physically aur electrically/optically connect karta hai.
+          3. Signal Transfer Stage – Signal bina kisi processing, amplification ya regeneration ke internal path se doosre connector tak pass ho jata hai.
+          4. Signal Transmission Stage – Doosre connector se signal connected cable ya device tak continue travel karta hai.
+          5. Passive Operation Stage – Pure process ke dauran Passive Coupler signal ko na amplify karta hai, na regenerate karta hai, na filter karta hai aur na hi interpret karta hai; ye sirf do physical links ke beech ek continuous transmission path provide karta hai.
+        - **Advantages**
+          1. Simple Design – Structure bahut simple hota hai aur use karna aasaan hota hai.
+          2. No External Power Required – Bina kisi electrical power ke kaam karta hai.
+          3. Low Cost – Active networking devices ke comparison me kaafi sasta hota hai.
+          4. Easy Cable Extension – Do compatible cables ya links ko aasani se connect karke cable length badhane me madad karta hai.
+          5. No Configuration Required – Kisi software ya network configuration ki zarurat nahi hoti.
+        - **Disadvantages**
+          1. Signal Loss – Connector aur connection point ki wajah se thoda signal attenuation ho sakta hai.
+          2. No Signal Regeneration – Weak signal ko restore ya regenerate nahi karta.
+          3. No Signal Amplification – Signal ki strength increase nahi karta.
+          4. No Intelligent Processing – Signal ya data ko analyze, filter ya route nahi karta.
+          5. Compatible Connectors Required – Sirf same type ke compatible cables/connectors ko connect kar sakta hai.
+          6. Not Suitable for Long Distances – Long cable extensions me signal degradation ki problem ho sakti hai kyunki Coupler signal quality improve nahi karta.
 ## 3. Transmission Medium Devices 
 Transmission Medium Devices wo components hote hain jo data signals ko ek device se dusre device tak travel karne ke liye physical ya wireless path provide karte hain.
+- **There are two broad categories of Transmission Medium Devices**
+### 1. Guided (wired) Transmission Media
+1. Twisted Pair Cable
+2. Coaxial Cable
+3. Fiber Optic Cable 
+### 2. Unguided (Wireless) Transmission Media 
+1. Radio Waves
+2. Microwaves
+3. Infrared
+4. Satellite Communication
 ## 4. Media Conversion Devices 
 Media Conversion Devices wo devices hote hain jo ek type ke signal ya transmission medium ko dusre type ke signal ya medium me convert karte hain taki different networks communicate kar saken.
 ## 5. Interface Devices 
