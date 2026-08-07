@@ -165,7 +165,46 @@ Physical Connectivity Devices wo hardware components hote hain jo network device
 Transmission Medium Devices wo components hote hain jo data signals ko ek device se dusre device tak travel karne ke liye physical ya wireless path provide karte hain.
 - **There are two broad categories of Transmission Medium Devices**
 ### 1. Guided (wired) Transmission Media
-1. Twisted Pair Cable
+1. Twisted Pair Cable - Twisted Pair Cable ek guided (wired) transmission medium hai jisme do insulated copper wires ko electromagnetic interference (EMI) aur crosstalk kam karne ke liye ek-dusre ke around twist kiya jata hai, taki data signals reliably transmit ho saken.
+  - **Basic Types of Twisted Pair Cable**
+    1. UTP (Unshielded Twisted Pair) - Ishme ksi extra metallic shielding ka use nahi hota.
+      - **Basic Core Components**
+        1. Copper Conductors - Electrical signals ko carry karne wale copper wires.
+        2. Insulation Layer - Har copper conductor ko electrically isolate aur protect karta hai.
+        3. Twisted Wire pairs - Do insulated conductors ko ek pair banakar twist kiya jata hai, jissa EMI aur crosstalk kam hota hai.
+        4. Outer jacket (PVC/LSZH) - Puri cable ko mechanical protection aur enviromental protection deta hai. 
+      - **Advantage**
+        1. Low Cost – Fiber aur STP cable ke comparison me sasti hoti hai.
+        2. Easy Installation – Install, terminate aur maintain karna aasaan hota hai.
+        3. Flexible – Cable patli aur flexible hoti hai, isliye routing aasaan hoti hai.
+        4. Good Performance – Short aur medium distances par reliable high-speed data transmission provide karti hai.
+        5. Widely Available – LAN networks me sabse zyada use hone wali cable hai.
+        6. Lightweight – Weight kam hone ki wajah se handling aur cable management aasaan hota hai.
+      - **Disadvantage**
+        1. EMI Sensitive – Strong electromagnetic interference se signal quality affect ho sakti hai.
+        2. Crosstalk – Adjacent wire pairs ke beech unwanted signal interference ho sakta hai.
+        3. Limited Distance – Ethernet me generally 100 meters tak hi recommended hoti hai.
+        4. Less Secure Physically – Electrical signal carry karne ki wajah se specialized equipment se signal tapping ka risk fiber ke comparison me zyada hota hai.
+        5. Lower Noise Protection – Shielding na hone ki wajah se noisy industrial environments ke liye ideal nahi hoti.
+    2. STP (Shielded Twisted Pair) - Ishme electromagnetic Interference (EMI) sa bachne ka lia metallic shielding hoti hai. 
+      - **Core Components**
+        1. Copper Conductors – Electrical signals ko carry karne wale copper wires.
+        2. Insulation Layer – Har copper conductor ko electrically isolate aur protect karti hai.
+        3. Twisted Wire Pairs – Do insulated conductors ko ek pair banakar twist kiya jata hai, jisse crosstalk kam hota hai.
+        4. Metallic Shield (Foil/Braided Shield) – External electromagnetic interference (EMI) aur noise se signal ko protect karta hai.
+        5. Outer Jacket (PVC/LSZH) – Puri cable ko mechanical aur environmental protection deta hai.
+      - **Advantage**
+        1. High EMI Protection – Metallic shielding external electromagnetic interference (EMI) se signal ko protect karti hai.
+        2. Reduced Crosstalk – Shielding aur twisted pairs unwanted interference ko aur kam karte hain.
+        3. Better Signal Quality – Noisy environments me bhi stable aur reliable data transmission provide karti hai.
+        4. Suitable for Industrial Environments – Factories, data centers aur high-electrical-noise areas ke liye adhik suitable hoti hai.
+        5. Higher Reliability – Interference kam hone ki wajah se communication errors ki sambhavna kam hoti hai.
+      - **Limitations**
+        1. Higher Cost – UTP ke comparison me zyada mehengi hoti hai.
+        2. Difficult Installation – Shielding ki wajah se installation aur termination thodi complex hoti hai.
+        3. Less Flexible – Additional shielding ke karan cable comparatively rigid hoti hai.
+        4. Proper Grounding Required – Shielding ka effective protection tabhi milta hai jab cable sahi tarike se grounded ho.
+        5. Heavier Cable – Shield ki wajah se weight UTP se zyada hota hai.
 2. Coaxial Cable
 3. Fiber Optic Cable 
 ### 2. Unguided (Wireless) Transmission Media 
