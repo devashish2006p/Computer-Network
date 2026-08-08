@@ -205,12 +205,113 @@ Transmission Medium Devices wo components hote hain jo data signals ko ek device
         3. Less Flexible – Additional shielding ke karan cable comparatively rigid hoti hai.
         4. Proper Grounding Required – Shielding ka effective protection tabhi milta hai jab cable sahi tarike se grounded ho.
         5. Heavier Cable – Shield ki wajah se weight UTP se zyada hota hai.
-2. Coaxial Cable
-3. Fiber Optic Cable 
+           
+2. Coaxial Cable - Coaxial Cable ek guided (wired) transmission medium hai jisme ek central copper conductor, insulating dielectric layer, metallic shield aur outer jacket concentric layers me arranged hote hain, jisse electrical signals reliably transmit kiye ja saken aur external interference kam ho.
+   - **Core Components**
+    1. Central Conductor – Usually copper/copper-clad conductor jo electrical signal carry karta hai.
+    2. Dielectric Insulator – Central conductor ko surrounding shield se electrically isolate karta hai aur conductor ki position maintain karta hai.
+    3. Metallic Shield / Outer Conductor – Signal ko contain karta hai aur external EMI/noise se protection provide karta hai.
+    4. Outer Jacket – Puri cable ko mechanical damage, moisture aur environmental effects se protect karta hai.
+   - **Advantages**
+    1. Good EMI Protection – Metallic shield external electromagnetic interference ko significantly reduce karta hai.
+    2. Reliable Signal Transmission – Shielding aur controlled structure ki wajah se signal relatively stable rehta hai.
+    3. Higher Noise Resistance – UTP ke comparison me noisy environments me better perform kar sakta hai.
+    4. Longer Reach – Common twisted-pair Ethernet deployments ke comparison me kuch coaxial applications longer cable runs support kar sakti hain.
+    5. Durable Construction – Multiple protective layers cable ko mechanical damage se relatively better protect karti hain.
+    6. Wide Frequency Support – Suitable coaxial designs high-frequency signals aur multiple channels carry kar sakte hain.
+   - **Disadvantages**
+    1. More Expensive – UTP ke comparison me generally cable aur associated connectors zyada costly ho sakte hain.
+    2. Less Flexible – Thick construction ki wajah se UTP ke comparison me bend aur route karna difficult hota hai.
+    3. More Difficult Installation – Termination aur connector installation comparatively complex hoti hai.
+    4. Higher Weight – Metallic shield aur thicker construction ki wajah se UTP se heavier hota hai.
+    5. Physical Tapping Risk – Copper-based medium hone ki wajah se physical access milne par signal interception possible hai.
+    6. Not as High-Capacity as Fiber – High-bandwidth, very-long-distance applications me fiber optic generally superior hota hai.
+3. Fiber Optic Cable - Fiber Optic Cable ek guided (wired) transmission medium hai jisme glass ya plastic ke extremely thin optical fibers ke through electrical signals ki jagah light pulses transmit karke high-speed, long-distance aur low-loss data communication ki jati hai.
+  - **Types of Fiber Optic Cable**
+    1. Single Mode Fiber (SMF) - SMF ek fiber-optic cable type hai jisme bahut chhota core hota hai, jiske andar light ka essentially ek propagation mode travel karta hai, isliye light pulses ke spread (dispersion) ko bahut kam rakhkar ye very long-distance aur high-speed communication ke liye suitable hota hai.
+    2. Multi Mode Fiber (MMF) - MMF ek fiber-optic cable type hai jisme SMF se comparatively bada core hota hai, jiske andar light multiple propagation modes/paths se travel karti hai, jiski wajah se dispersion zyada hota hai aur ye generally shorter-distance, high-speed communication jaise LAN aur data-center links ke liye suitable hota hai.
+  - **Core Components**
+    1. Core – Glass/plastic ka central optical region jisme light signals travel karte hain.
+    2. Cladding – Core ke around glass layer hoti hai jiska refractive index lower hota hai, jo light ko core ke andar guide karne me help karti hai.
+    3. Coating / Buffer – Fiber ko moisture, bending aur mechanical stress se protect karti hai.
+    4. Strength Member – Tensile strength provide karta hai taki cable ko kheenchne par fiber damage na ho.
+    5. Outer Jacket – Puri cable ko physical aur environmental damage se protect karta hai.
+  - **Advantages**
+    1. Very High Bandwidth – Copper cables ke comparison me bahut high data rates support kar sakti hai.
+    2. Long-Distance Transmission – Signal ko relatively long distances tak low attenuation ke saath transmit kar sakti hai.
+    3. EMI Immune – Fiber glass/plastic se bani hoti hai, isliye electromagnetic interference se practically unaffected hoti hai.
+    4. Low Signal Loss – Long-distance communication me signal attenuation copper ke comparison me bahut kam hota hai.
+    5. High Security – Electrical signal na hone ki wajah se conventional electromagnetic tapping difficult hoti hai, although physical tapping still possible hai.
+    6. Lightweight – High-capacity communication ke liye copper cabling ke comparison me lightweight ho sakti hai.
+    7. Electrical Isolation – Do endpoints ke beech electrical current conduct nahi karti, isliye ground loops aur electrical interference ka risk nahi hota.
+  - **Disadvantages**
+    1. High Cost – Cable, optical transceivers aur installation equipment copper ke comparison me generally expensive hote hain.
+    2. Fragile Fiber – Glass fiber excessive bending, crushing ya pulling se damage ho sakti hai.
+    3. Difficult Installation – Splicing, termination aur testing ke liye specialized tools aur skills chahiye.
+    4. Specialized Hardware Required – Electrical-to-optical aur optical-to-electrical conversion ke liye optical transceivers/receivers required hote hain.
+    5. Repair Complexity – Fiber break hone par fault locate aur repair karna copper cable ke comparison me comparatively difficult hota hai.
+    6. Physical Tapping Possible – Fiber highly secure hai, lekin specialized equipment aur physical access ke saath optical tapping theoretically possible hai.
 ### 2. Unguided (Wireless) Transmission Media 
-1. Radio Waves
-2. Microwaves
-3. Infrared
+1. Radio Waves - Radio waves electromagnetic waves hoti hain jo rapidly changing electric aur magnetic fields ke through space me travel karti hain aur wireless communication me information (data, voice, video) ko carry karne ke liye use hoti hain.
+  - **Working Mechanism**
+    1. Data generate hota hai – Computer/phone se digital data (0 aur 1) generate hota hai.
+    2. Data electrical signal me hota hai – Device ka communication hardware is data ko electrical signal ke form me process karta hai.
+    3. Carrier wave generate hoti hai – Transmitter ek high-frequency electromagnetic carrier signal generate karta hai.
+    4. Data carrier par modulate hota hai – Data ke according carrier ki amplitude, frequency ya phase ko change kiya jata hai; isi process ko modulation kehte hain.
+    5. Antenna electrical energy ko electromagnetic wave me convert karta hai – Transmitter antenna me rapidly changing electrical current electromagnetic field create karta hai, aur ye energy radio wave ke form me space me propagate hoti hai.
+    6. Radio wave space me travel karti hai – Radio wave ke electric field aur magnetic field ek-dusre ke perpendicular hote hain aur dono propagation direction ke bhi perpendicular hote hain.
+    7. Environment wave ko affect karta hai – Buildings, walls, trees aur terrain se radio wave reflect, diffract, refract ya scatter ho sakti hai, jiski wajah se signal weak ya distorted ho sakta hai.
+    8. Receiver antenna wave detect karta hai – Jab radio wave receiver antenna tak pahunchti hai, uska electromagnetic field antenna me ek very small electrical signal induce karta hai.
+    9. Receiver desired signal ko filter karta hai – Receiver unwanted frequencies/noise ko remove karke required frequency band ko select karta hai.
+    10. Demodulation hoti hai – Receiver carrier se original information ko extract karta hai; is process ko demodulation kehte hain.
+    11. Original data recover hota hai – Extracted signal ko receiver ka digital circuitry process karke original 0s aur 1s me recover karta hai.
+  - **Advantages**
+    1. Wireless Communication – Physical cable ki zarurat nahi hoti, isliye devices ko wirelessly connect kiya ja sakta hai.
+    2. Wide Coverage – Suitable frequency aur power ke saath radio signals relatively large areas cover kar sakte hain.
+    3. Mobility – Devices move karte hue bhi communication maintain kar sakte hain, jaise mobile phones aur Wi-Fi devices.
+    4. Easy Deployment – Remote ya difficult locations me cable bichane ke comparison me wireless infrastructure deploy karna easier ho sakta hai.
+    5. Broadcast Capability – Ek transmitter ka signal multiple receivers simultaneously receive kar sakte hain.
+    6. Supports Many Technologies – Wi-Fi, Bluetooth, cellular, radio communication etc. radio-frequency electromagnetic waves ka use karte hain.
+  - **Disadvantages**
+    1. Interference – Other radio signals aur electromagnetic sources unwanted interference create kar sakte hain.
+    2. Shared Medium – Same frequency/channel ko multiple devices use kar sakte hain, jisse congestion aur collisions/interference ho sakta hai.
+    3. Security Risk – Signal air me propagate karta hai, isliye nearby attacker compatible equipment se signal capture karne ki koshish kar sakta hai.
+    4. Signal Attenuation – Distance badhne par radio signal generally weak hota jata hai.
+    5. Obstacles ka Effect – Walls, buildings, trees aur terrain signal ko reflect, absorb, diffract ya scatter kar sakte hain.
+    6. Jamming Risk – Deliberate interference create karke wireless communication ko disrupt kiya ja sakta hai.
+    7. Limited Spectrum – Available radio-frequency spectrum limited hai, isliye frequencies ko efficiently manage/share karna padta hai.
+2. Microwaves - Microwaves high-frequency electromagnetic waves hoti hain jo mainly line-of-sight wireless communication me data transmit karne ke liye use hoti hain, jaise point-to-point links, satellite communication, radar aur kuch cellular communication systems me.
+  - **How it works**
+    1. Data generate hota hai – Computer, router, telephone system ya kisi network device se digital data 0 aur 1 ke form me generate hota hai.
+    2. Data electrical signal me process hota hai – Communication equipment is digital data ko transmission ke liye suitable electrical/baseband signal me convert aur process karta hai.
+    3. Microwave carrier generate hoti hai – Transmitter ek high-frequency electromagnetic carrier signal generate karta hai jise microwave frequency range me operate karaya jata hai.
+    4. Data carrier par modulate hota hai – Original data ko microwave carrier ke amplitude, frequency ya phase jaise properties me encode kiya jata hai, taki data microwave signal ke through transmit ho sake.
+    5. Transmitter signal ko amplify karta hai – Required transmission distance ke according microwave signal ko suitable power level tak amplify kiya jata hai.
+    6. Directional antenna signal ko focus karta hai – Special highly directional antenna microwave energy ko broad area me spread karne ke bajay ek relatively narrow beam me particular direction me focus karta hai.
+    7. Microwave space me propagate karti hai – Focused electromagnetic wave air/space ke through transmitter antenna se receiver antenna ki direction me travel karti hai; terrestrial microwave links me generally clear line-of-sight required hota hai.
+    8. Obstacles signal ko affect kar sakte hain – Building, mountain, trees ya doosre obstacles beam ko block, reflect ya scatter kar sakte hain, jiski wajah se signal weak ya distorted ho sakta hai.
+    9. Earth curvature bhi limitation hai – Microwave generally straight-line propagation karti hai, isliye bahut long terrestrial distances par Earth ki curvature ki wajah se direct link possible nahi hota; isi liye relay towers use karke link ko multiple hops me divide kiya ja sakta hai.
+    10. Receiving antenna signal capture karta hai – Doosre end ka directional antenna incoming microwave energy ko receive karke usse receiver ke electrical signal me convert karta hai.
+    11. Receiver desired signal ko filter karta hai – Receiver required microwave frequency/channel ko select karta hai aur unwanted signals aur noise ko filter karta hai.
+    12. Signal demodulate hota hai – Receiver microwave carrier se originally encoded information ko extract karta hai, jise demodulation kehte hain.
+    13. Original data recover hota hai – Demodulated signal ko digital circuitry process karke original 0s aur 1s recover kiye jaate hain.
+
+  - **Advantage**
+    1. Wireless Transmission – Physical cable bichane ki zarurat nahi hoti, isliye difficult locations ke beech communication establish kiya ja sakta hai.
+    2. High Data Capacity – High-frequency microwave bands relatively high bandwidth provide kar sakte hain, isliye high-speed data communication possible hai.
+    3. Long-Distance Links – Proper line-of-sight aur relay towers ke saath long-distance communication establish kiya ja sakta hai.
+    4. Fast Deployment – Fiber/copper cable infrastructure bichane ke comparison me point-to-point microwave link comparatively quickly deploy kiya ja sakta hai.
+    5. Directional Transmission – High-gain directional antennas signal ko narrow beam me focus karte hain, jisse unwanted radiation aur interference ko reduce karne me help milti hai.
+  - **Disadvantage**
+    1. Line-of-Sight Required – Terrestrial microwave links me transmitter aur receiver ke beech generally clear path chahiye hota hai.
+    2. Obstacles ka Effect – Buildings, mountains, trees etc. microwave beam ko block ya weaken kar sakte hain.
+    3. Weather Sensitivity – Heavy rain aur atmospheric conditions, especially higher microwave frequencies par, signal attenuation badha sakti hain.
+    4. Alignment Required – Directional antennas ko accurately align karna padta hai; misalignment se signal quality significantly degrade ho sakti hai.
+    5. Relay Infrastructure Required – Very long terrestrial distances par intermediate towers/relay stations ki zarurat pad sakti hai.
+3. Infrared - Infrared (IR) electromagnetic radiation ka ek range hai jo visible red light ke baad electromagnetic spectrum me aata hai, jiska wavelength visible red light se longer aur frequency lower hoti hai, aur iska use short-range wireless communication jaise remote controls aur kuch data links me kiya ja sakta hai.
+  - **How it Works**
+  - **Advantages**
+  - **Disadvantages**
 4. Satellite Communication
 ## 4. Media Conversion Devices 
 Media Conversion Devices wo devices hote hain jo ek type ke signal ya transmission medium ko dusre type ke signal ya medium me convert karte hain taki different networks communicate kar saken.
