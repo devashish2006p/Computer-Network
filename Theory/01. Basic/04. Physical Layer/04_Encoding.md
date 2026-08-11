@@ -21,22 +21,23 @@ Line coding ek technique hai jisme digital bits (0 aur 1) ko predefined voltage/
        - **Encoding Techniques**
          1. Non-Return-to-Zero (NRZ) - Isme ek bit interval ke poore duration mein 1 ko ek fixed non-zero voltage aur 0 ko 0V se represent kiya jata hai, aur signal bit ke beech mein automatically 0V par return nahi karta.
             - **Internal Mechanism**
-1. Sabse pehle sender ke paas digital data 0 aur 1 ke sequence ke form mein hota hai, jaise 10110.
-2. Sender ka physical-layer hardware (PHY/transmitter) is binary data ko bits ke sequence ke roop mein process karta hai.
-3. Har bit ka ek fixed time duration hota hai, jise hum bit period kehte hain; isi fixed timing ke according bits one-by-one transmit hote hain.
-4. NRZ ek predefined rule provide karta hai ki har bit ko physical signal ke kis level se represent karna hai.
-5. Unipolar NRZ ke example mein 1 ko +V aur 0 ko 0V se represent kiya ja sakta hai.
-6. Transmitter pehle bit ko dekhta hai aur us bit ke corresponding voltage level ko physical transmission line par generate karta hai.
-7. Agar bit 1 hai, to transmitter +V signal ko poore bit period tak maintain karta hai.
-8. Agar next bit 0 hai, to transmitter signal ko 0V par change karta hai aur poore next bit period tak 0V maintain karta hai.
-9. Agar consecutive bits same hain, jaise 111, to signal bhi un teeno bit periods ke dauran same voltage level par continuously bana reh sakta hai.
-10. Agar bit change hota hai, jaise 1 → 0, to transmitter corresponding signal level ko +V → 0V change karta hai.
-11. NRZ mein signal ek bit period ke beech mein automatically zero level par return nahi karta, isi property ki wajah se iska naam Non-Return-to-Zero hai.
-12. process se binary data ka ek electrical signal waveform/pattern ban jata hai, jaise 1010 ke liye +V → 0V → +V → 0V.
-13. Ye electrical signal transmission medium, jaise copper cable, ke through receiver ki taraf travel karta hai.
-14. Signal receiver tak pahunchne par receiver us incoming electrical signal ke voltage level ko detect karta hai.
-15. Receiver ko pata hota hai ki kaunsi NRZ scheme use hui hai, isliye woh received signal level ko corresponding bit ke roop mein interpret karta hai.
-16. Unipolar NRZ mein receiver +V ko 1 aur 0V ko 0 interpret karega, aur is tarah original binary sequence recover karega.
+              1. Sabse pehle sender ke paas digital data 0 aur 1 ke sequence ke form mein hota hai, jaise 10110.
+              2. Sender ka physical-layer hardware (PHY/transmitter) is binary data ko bits ke sequence ke roop mein process karta hai.
+              3. Har bit ka ek fixed time duration hota hai, jise hum bit period kehte hain; isi fixed timing ke according bits one-by-one transmit hote hain.
+              4. NRZ ek predefined rule provide karta hai ki har bit ko physical signal ke kis level se represent karna hai.
+              5. Unipolar NRZ ke example mein 1 ko +V aur 0 ko 0V se represent kiya ja sakta hai.
+              6. Transmitter pehle bit ko dekhta hai aur us bit ke corresponding voltage level ko physical transmission line par generate karta hai.
+              7. Agar bit 1 hai, to transmitter +V signal ko poore bit period tak maintain karta hai.
+              8. Agar next bit 0 hai, to transmitter signal ko 0V par change karta hai aur poore next bit period tak 0V maintain karta hai.
+              9. Agar consecutive bits same hain, jaise 111, to signal bhi un teeno bit periods ke dauran same voltage level par continuously bana reh sakta hai.
+              10. Agar bit change hota hai, jaise 1 → 0, to transmitter corresponding signal level ko +V → 0V change karta hai.
+              11. NRZ mein signal ek bit period ke beech mein automatically zero level par return nahi karta, isi property ki wajah se iska naam Non-Return-to-Zero hai.
+              12. process se binary data ka ek electrical signal waveform/pattern ban jata hai, jaise 1010 ke liye +V → 0V → +V → 0V.
+              13. Ye electrical signal transmission medium, jaise copper cable, ke through receiver ki taraf travel karta hai.
+              14. Signal receiver tak pahunchne par receiver us incoming electrical signal ke voltage level ko detect karta hai.
+              15. Receiver ko pata hota hai ki kaunsi NRZ scheme use hui hai, isliye woh received signal level ko corresponding bit ke roop mein interpret karta hai.
+              16. Unipolar NRZ mein receiver +V ko 1 aur 0V ko 0 interpret karega, aur is tarah original binary sequence recover karega.
+                  
          2. Return-to-Zero (RZ) - RZ ek line-coding technique hai jisme har bit ko represent karne ke baad signal, usi bit ke time interval ke andar, 0V par return kar jata hai.
             - **Internal Mechanism**
               1. Sender ke paas binary data 0 aur 1 ke form mein hota hai, jaise 101.
@@ -52,8 +53,7 @@ Line coding ek technique hai jisme digital bits (0 aur 1) ko predefined voltage/
               11. Receiver incoming signal ko observe karta hai aur signal ke presence/absence aur timing ke according original 0 aur 1 ko identify karta hai.
               12. Har 1 ke andar signal ka zero par return hona receiver ko regular timing information provide karta hai, jisse synchronization/clock recovery easier hoti hai.
               13. Iska disadvantage ye hai ki signal mein NRZ ke comparison mein zyada transitions hote hain, isliye RZ ko generally zyada bandwidth chahiye hoti hai.
-            
-     ---
+                  
      2. Polar - Unipolar Line Coding ek line-coding technique hai jisme 0 aur 1 ko represent karne ke liye signal ki sirf ek polarity (positive ya negative) use hoti hai, aur doosre bit ke liye usually zero-voltage level use hota hai.
     3. Bipolar - Bipolar Line Coding ek line-coding technique hai jisme 0 aur 1 ko represent karne ke liye +V, 0V aur −V — teeno voltage levels use kiye ja sakte hain.
     4. Multilevel - Multilevel Line Coding ek technique hai jisme sirf 0 aur 1 ko ek-ek voltage level se represent karne ke bajay, multiple voltage/signal levels ko use karke zyada information ko efficiently represent kiya jata hai.
