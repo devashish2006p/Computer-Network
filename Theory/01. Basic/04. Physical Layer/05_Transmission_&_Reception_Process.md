@@ -67,3 +67,12 @@ Bit:     1    0    1    1
 6. Agle clock event par transmitter second bit 0 process karta hai.
 7. Isi tarah har timing interval par next bit process hoti hai.
 8. Isse sender ke paas ek regular rhythm hota hai, jiske according bits ko signal mein represent karke transmit kiya jata hai.
+
+---
+
+# 3. Encoding & Signal Generation
+
+**I hade already compleated this topic in previous file so click on this link to access that file -> [04. Encoding](04.%20Physical%20Layer/04_Encoding.md)**
+
+
+
