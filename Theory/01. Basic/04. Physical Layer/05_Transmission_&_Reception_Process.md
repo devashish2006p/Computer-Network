@@ -74,5 +74,6 @@ Bit:     1    0    1    1
 
 **I hade already compleated this topic in previous file so click on this link to access that file -> [04. Encoding](04_Encoding.md)**
 
+---
 
-
+# 4. Transmitter/PHY Operation
