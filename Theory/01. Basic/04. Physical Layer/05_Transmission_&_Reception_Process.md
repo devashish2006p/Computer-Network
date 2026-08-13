@@ -72,7 +72,7 @@ Bit:     1    0    1    1
 
 # 3. Encoding & Signal Generation
 
-**I hade already compleated this topic in previous file so click on this link to access that file -> [04. Encoding](04.%20Physical%20Layer/04_Encoding.md)**
+**I hade already compleated this topic in previous file so click on this link to access that file -> [04. Encoding](04_Encoding.md)**
 
 
 
