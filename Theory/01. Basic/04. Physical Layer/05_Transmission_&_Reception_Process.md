@@ -77,3 +77,52 @@ Bit:     1    0    1    1
 ---
 
 # 4. Transmitter/PHY Operation
+
+## PHY kya hai
+PHY (Physical Layer Transceiver) ek hardware component/circuit hota hai jo digital data/bits ko physical signal (electrical, optical ya RF) mein convert karke medium par transmit karta hai aur receive hone wale physical signal ko wapas digital data mein convert karta hai.
+### Purpose of PHY
+  1. PHY digital data/bits ko physical signal mein convert karta hai, taaki data transmission medium par bheja ja sake.
+  2. PHY appropriate signal generate karta hai, jaise copper ke liye electrical, fiber ke liye optical aur wireless ke liye RF signal.
+  3. PHY transmitted signal ko medium ke according suitable banata hai, taaki woh required physical medium par properly travel kar sake.
+  4. PHY received physical signal ko detect aur interpret karke digital data/bits mein convert karta hai.
+  5. PHY transmitter aur receiver ke beech physical communication establish karne mein help karta hai, yani actual physical link par data transmission possible banata hai.
+     
+### PHY bits ko physical signal ma kaisa convert karta hai?
+  1. PHY ko MAC/Data link layer sa digital bitstream milta hai jaisa 1010.
+  2. PHY transmitter pehle bits ko apne transmission format ka according process karta hai, yani required encoding, scrambling ya modulation rules apply karta hai.
+  3. Bits ko signal states/symbols ma map kiya jata hai. Ex - NRZ ma 1 -> +v and 0 -> 0v.
+  4. PHY ka digital circuitry decide karta hai ki har particular time interval ma transmitter ko kya signal output karna hai.
+  5. Ya digital decision transmitter ka analog/output circuitry ko control karta hai. Mtlb circuitry ko instruction   milta hai ki ab output ko kis current level ya waveform par rakhna hai.
+  6. Transmitter circuitry required electrical waveform generate karta hai.
+  7. Signal conditioning circuitry signal ko transmission ka liye suitable banati hai, jaisa required amplitude aur waveform characteristics maintain karna.
+  8. Phir PHY ka physical interface signal ko transmission medium tak deliver karta hai. Copper main electrical signal connector par aate hai.
+  9. Copper cable ma voltage/current ka changing pattern propagate karta hai, aur receiver side par wahi changing physical signal detect hota hai. 
+
+### PHY physical signal ko data ma kaisa convert karta hai?
+1. Medium se physical signal receiver PHY tak aata hai.
+2. Receiver circuitry incoming signal ko detect karti hai, yani signal mein actual changes/levels ko measure karti hai.
+3. Signal conditioning ki ja sakti hai, taaki noise/distortion ke bawajood signal ko properly interpret kiya ja sake.
+4. Receiver timing/clock ko recover karta hai, taaki usse pata chale ki signal ko kis timing par read karna hai.
+5. Demodulation/decoding rule apply hota hai, jisse physical signal ko corresponding symbols/bits mein convert kiya jata hai.
+6. Is tarah receiver ko original bitstream 1010 recover ho jata hai.
+7. Ye bits phir PHY se MAC/Data Link layer ko pass hote hain.
+
+### Relationship between PHY and MAC/Data Link Layer 
+MAC/Data Link Layer ka kaam hota hai data ko network frame ke form mein prepare/manage karna, jabki PHY ka kaam us frame ke digital bits ko actual physical signal mein transmit karna aur received signal ko wapas bits mein recover karna hota hai.
+
+## Transmitter 
+Transmitter ek hardware circuitry/system ka part hota hai jo digital bits ko process karke unki encoding/modulation ke according actual physical signal generate karta hai aur us signal ko transmission medium par bhejta hai.
+
+### Basic Role of Transmitter
+1. Transmitter PHY se digital bits/data receive karta hai.
+2. Ye bits ko required encoding ya modulation scheme ke according signal representation mein map karta hai.
+3. Transmitter circuitry us representation ke according actual physical signal generate karti hai.
+4. Generated signal ko transmission medium ke suitable form mein prepare karta hai, jaise electrical signal, optical signal ya RF signal.
+5. Finally, transmitter generated physical signal ko cable, fiber ya wireless medium par send karta hai.
+### Transmitter ko digital data kaha sa milta hai
+
+### Transmitter bits ko signal representation mein kaisa convert karta hai? 
+
+## Signal Conditioning
+
+## Complete Transmitter Path
