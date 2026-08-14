@@ -114,15 +114,101 @@ MAC/Data Link Layer ka kaam hota hai data ko network frame ke form mein prepare/
 Transmitter ek hardware circuitry/system ka part hota hai jo digital bits ko process karke unki encoding/modulation ke according actual physical signal generate karta hai aur us signal ko transmission medium par bhejta hai.
 
 ### Basic Role of Transmitter
-1. Transmitter PHY se digital bits/data receive karta hai.
-2. Ye bits ko required encoding ya modulation scheme ke according signal representation mein map karta hai.
-3. Transmitter circuitry us representation ke according actual physical signal generate karti hai.
-4. Generated signal ko transmission medium ke suitable form mein prepare karta hai, jaise electrical signal, optical signal ya RF signal.
-5. Finally, transmitter generated physical signal ko cable, fiber ya wireless medium par send karta hai.
+  1. Transmitter PHY se digital bits/data receive karta hai.
+  2. Ye bits ko required encoding ya modulation scheme ke according signal representation mein map karta hai.
+  3. Transmitter circuitry us representation ke according actual physical signal generate karti hai.
+  4. Generated signal ko transmission medium ke suitable form mein prepare karta hai, jaise electrical signal, optical signal ya RF signal.
+  5. Finally, transmitter generated physical signal ko cable, fiber ya wireless medium par send karta hai.
+     
 ### Transmitter ko digital data kaha sa milta hai
+Transmitter ko digital data normally MAC/Data Link Layer se milta hai, jo network frame ke data ko digital bitstream ke form mein PHY ko handoff karta hai.
 
-### Transmitter bits ko signal representation mein kaisa convert karta hai? 
 
 ## Signal Conditioning
-
+Signal conditioning ka matlab hai generated physical signal ko transmission medium par bhejne se pehle uski physical characteristics ko suitable banana, taaki signal medium mein reliably travel kar sake aur receiver usse correctly detect kar sake.
+### Basic Mechanism
+  1. Transmitter signal generate karta hai.
+  2. Signal conditioning circuitry signal ko modify/prepare karti hai.
+  3. Signal ka amplitude/level appropriate kiya ja sakta hai.
+  4. Signal ki waveform/shape ko suitable banaya ja sakta hai.
+  5. Unwanted frequency components ko filter kiya ja sakta hai.
+  6. Phir conditioned signal ko physical medium par transmit kiya jata hai.
 ## Complete Transmitter Path
+  1. MAC / Data Link Layer → frame prepare karke PHY ko digital bits deta hai.
+  2. Digital Bitstream → 101100... jaise ordered bits PHY transmitter ke input mein aate hain.
+  3. Encoding / Modulation → bits ko defined signal representation/symbols mein map kiya jata hai.
+  4. Signal Generation → transmitter circuitry us representation ke according actual electrical/optical/RF signal generate karti hai.
+  5. Signal Conditioning → signal ko transmission ke liye suitable characteristics mein prepare kiya jata hai.
+  6. Physical Interface / Driver → generated signal ko required physical output level par medium/interface tak drive karta hai.
+  7. Connector → signal ko actual cable/fiber interface se connect karta hai.
+  8. Transmission Medium → electrical signal copper mein, optical signal fiber mein, ya RF signal wireless medium mein travel karta hai.
+     
+---
+# 5. Signal Transmission in Medium
+## Signal Propagation
+
+### Transmitter sa receiver tak signal kaisa travel karta hai?
+
+### Propagation Path kya hota hai?
+
+## Transmission Medium ka role
+### Medium signal ko physically carry kaisa karta hai?
+### Copper, Fiber aur Wireless medium ka basic difference
+
+## Electrical Signal Transmission
+### Voltage/current ka form mein signal transmission. 
+### Electrical signal conductor main kaisa propagate karta hai?
+### Differential signaling ka basic concept. 
+
+## Optical Signal 
+### Electrical data ko optical signal ma kaisa represent kiya jata hai?
+### Light pulses fiber mein kaisa travel karte hai?
+### Core aur Cladding ka basic role
+### Total Internal Reflection (TIR) ka basic concept
+### Single Mode vs Multi Mode ka basic difference. 
+
+## Electromagnetic/RF Signal Transmission
+### Electrical signal se electromagnetic/RF wave ka basic concept.
+### Antenna ka basic role.
+### Antenna signal ko electromagnetic wave mein kaise radiate karta hai.
+### Air/space mein wave ka basic propagation.
+### Receiver antenna signal ko kaise capture karta hai. 
+
+## Signal Attenuation
+### Attenuation kya hai?
+### Distance badhne par signal weak kyun hota hai?
+### Copper, fiber aur wireless mein attenuation ka basic behavior.
+### Signal strength ka basic concept.
+
+## Noise aur Interface
+### Noise kya hai?
+### Signal mein unwanted energy kaise add hoti hai?
+### EMI ka basic concept.
+### Crosstalk ka basic concept.
+### Signal aur noise ka basic difference.
+
+## Signal Distortion
+### Distortion kya hai?
+### Signal ka original shape kyun change ho sakta hai?
+### Dispersion ka basic concept.
+### Copper aur fiber mein distortion/dispersion ka basic idea.
+
+## Propagation Delay 
+### Propagation delay kya hai?
+### Signal ko transmitter se receiver tak pahunchne mein time kyun lagta hai?
+### Distance aur propagation speed ka relationship.
+### Propagation delay vs transmission time ka basic difference.
+
+## Bandwidth aur Frequency Range 
+Bandwidth kya hai?
+Signal ki frequency ka basic concept.
+Medium ki bandwidth transmission ko kaise affect karti hai?
+Higher bandwidth ka basic meaning.
+
+## Signal-to-Noise Ratio (SNR)
+### SNR kya hai?
+### Signal strength aur noise strength ka relationship.
+### SNR high/low hone ka basic effect.
+### Reliable communication mein SNR important kyun hai?
+
+## Medium ki Transmission Limitations
